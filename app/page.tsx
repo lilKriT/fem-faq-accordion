@@ -32,7 +32,7 @@ let items: Item[] = [
 export default function Home() {
   return (
     <section className="flex min-h-dvh justify-center items-center">
-      <div className="min-w-sm max-w-3xl flex flex-col justify-center items-start bg-white px-10 py-10 rounded-4xl">
+      <div className="min-w-sm max-w-3xl flex flex-col gap-8 justify-center items-start bg-white px-10 py-10 rounded-4xl">
         {/* Title */}
         <div className="flex justify-center items-center gap-6">
           <Image
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
         {/* Actual FAQ */}
-        <div>
+        <div className="flex flex-col gap-2">
           {items.map((i, idx) => (
             <FaqItem key={idx} item={i} />
           ))}

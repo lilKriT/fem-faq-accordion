@@ -20,11 +20,11 @@ const FaqItem = (props: Props) => {
       {/* Title and button container */}
       <div className="flex justify-between items-center">
         {/* Title / question */}
-        <h2 className="font-semibold text-lg text-purple-950 hover:text-purple-500 motion-safe:duration-150 ease-in-out">
+        <h2 className="font-semibold text-lg text-purple-950 hover:text-purple-500 motion-safe:duration-150 ease-in-out text-balance">
           {props.item.question}
         </h2>
         {/* Button */}
-        <button onClick={clickHandler} className="cursor-pointer">
+        <button onClick={clickHandler} className="cursor-pointer shrink-0">
           {!isOpen ? (
             <Image
               src={"/icon-plus.svg"}
@@ -47,7 +47,7 @@ const FaqItem = (props: Props) => {
       <div
         className={`grid ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"} duration-300 ease-in-out origin-top`}
       >
-        <p className={`text-purple-600  overflow-hidden`}>
+        <p className={`text-purple-600  overflow-hidden pt-4`}>
           {props.item.answer}
         </p>
       </div>

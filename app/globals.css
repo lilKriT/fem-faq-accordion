@@ -22,10 +22,16 @@
 
 /* fall back */
 body {
-  background:
-    url("/background-pattern-desktop.svg") no-repeat top -1px center /
-      calc(100% + 1px),
-    var(--color-purple-100);
-  /* background-size: calc(100% + 1px); */
   font-family: var(--font-work-sans), Arial, Helvetica, sans-serif;
+  background: url("/background-pattern-mobile.svg") no-repeat top -1px
+    left -1px / 101% var(--color-purple-100);
+}
+
+@media (min-width: 540px) {
+  body {
+    background:
+      url("/background-pattern-desktop.svg") no-repeat top -1px left -2px /
+        calc(100% + 1px),
+      var(--color-purple-100);
+  }
 }

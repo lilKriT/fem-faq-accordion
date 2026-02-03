@@ -32,7 +32,7 @@ let items: Item[] = [
 export default function Home() {
   return (
     <section className="flex min-h-dvh justify-center items-center">
-      <div className="min-w-sm max-w-3xl flex flex-col gap-8 justify-center items-start bg-white px-10 py-10 rounded-4xl">
+      <div className="min-w-sm max-w-2xl mx-8 my-16 flex flex-col gap-8 justify-center items-start bg-white px-10 pt-10 pb-4 rounded-4xl">
         {/* Title */}
         <div className="flex justify-center items-center gap-6">
           <Image
@@ -42,7 +42,9 @@ export default function Home() {
             height={40}
           />
 
-          <h1 className="font-bold text-6xl text-purple-950">FAQs</h1>
+          <h1 className="font-bold text-5xl md:text-6xl text-purple-950">
+            FAQs
+          </h1>
         </div>
 
         {/* Actual FAQ */}
